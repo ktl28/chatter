@@ -1,0 +1,114 @@
+
+.App {
+  background: linear-gradient(#e66465, #9198e5);;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  height: 4rem;
+  width: 100%;
+  border-bottom: 2px solid white;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.logo {
+  height: 3.5rem;
+  width: 3.5rem;
+  background: url("https://logos-world.net/wp-content/uploads/2020/12/Lays-Logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.title {
+  color: rgb(192, 13, 13);
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.footer {
+  height: 4rem;
+  width: 100%;
+  border-top: 2px solid white;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  background: rgba(255, 255, 255, 0.3);
+  position: relative;
+}
+
+.text-input {
+  width: 100%;
+  border: 1px solid white;
+  height: 2rem;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  background: black;
+  color: white;
+}
+
+.send {
+  background: white;
+  border-radius: 50%;
+  border: none;
+  height: 1.7rem;
+  width: 1.7rem;
+  position: absolute;
+  right: 1.15rem;
+  cursor: pointer;
+}
+
+.text {
+  display: inline-block;
+  width: auto;
+  margin: 20px auto;
+  background-color: #1e1f25;
+  border: 1px solid #a4adad;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  font-weight: 700;
+  color: #f2f7f6;
+  font-family: helvetica;
+  position: relative;
+}
+
+.point:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid #1e1f25;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  left: -20px;
+}
+
+/* holds a text bubble */
+.box {
+  position: flex;
+  margin-left: 30px;
+}
+
+/* holds all the text bubbles */
+#container { 
+  width: 100%;
+  height: 300px;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
