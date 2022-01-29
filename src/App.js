@@ -9,8 +9,10 @@ function App() {
       </header>
       
       <div id="container">
-        <div className="box text point">hello this is a message</div>
-        <div className="box text point">hello</div>
+        <div className="box text point">hello this is a message</div>​
+
+        <div className="color text point">hello</div>
+
         <div className="box text point">yuppie</div>
       </div>
 

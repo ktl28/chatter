@@ -100,6 +100,13 @@
   margin-left: 30px;
 }
 
+/* holds a text bubble with color */
+.color {
+  position: flex;
+  margin-left: 30px;
+  background-image: url('https://i.pinimg.com/736x/b7/3d/4c/b73d4c5893800d24b20dd46972b63206.jpg');
+}
+
 /* holds all the text bubbles */
 #container { 
   width: 100%;
