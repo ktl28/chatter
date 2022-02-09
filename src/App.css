@@ -47,7 +47,7 @@
 }
 
 .text-input {
-  width: 100%;
+  width: calc(100% - 50px);
   border: 1px solid white;
   height: 2rem;
   border-radius: 1rem;
@@ -107,13 +107,46 @@
   background-image: url('https://i.pinimg.com/736x/b7/3d/4c/b73d4c5893800d24b20dd46972b63206.jpg');
 }
 
+/* message viewing window */
 .messages {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: flex-start;
   overflow: auto;
   max-height: calc(100vh - 4rem - 5rem);
 }
+
+.group {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.username {
+  text-align: center;
+  font-weight: 700;
+  color: #050505;
+  font-family: helvetica;
+  position: relative;
+}
+
+.username-input {
+  text-align: center;
+  font-weight: 900;
+  color: #050505;
+  font-family: helvetica;
+  position: relative;
+}
+
+:name {
+
+  text-align: center;
+  font-weight: 700;
+  color: #050505;
+  font-family: helvetica;
+  position: relative;
+
+}
+
 
 
 
