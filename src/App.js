@@ -1,10 +1,10 @@
+import React from 'react'
 import "./App.css";
 import TextInput from "./TextInput";
 import { useState } from "react";
 import Message from "./Message";
 import Camera from "react-snap-pic";
-
-
+import NamePicker from "./NamePicker.js";
 
 
 function App() {
@@ -14,9 +14,11 @@ function App() {
   // setMessages function is used to update messages (var)
   let [messages, setMessages] = useState([]);
   const [showCamera, setShowCamera] = useState(false)
+// eslint-disable-next-line
+  const [name, setName] = useState('')
 
 
-  
+
   function messageSent(text) { // runs whenever send button is pressed
     if (!text) return;
     
@@ -24,7 +26,7 @@ function App() {
     const newMessage = {
       text, 
       time: Date.now(),
-      user: "Kayli: "
+      user: name,
     };
     // set the "messages" to be new array with new message + old message
     setMessages([newMessage, ...messages]) // adds onto array using spread operator 
@@ -46,7 +48,11 @@ function App() {
         <span className="title">CHATTER!</span>
       </header>
 
+
       {showCamera && <Camera takePicture={takePicture} />}
+
+            <NamePicker edit={setName}/>
+
 
       <div className="messages">
         {messages.map((msg, i)=>{ // loops over individaul msg and returns msg into bubble
@@ -59,7 +65,6 @@ function App() {
           return <Name {...msg} key={j} />;
         })} */}
       </div>
-
 
        {/* sendMessage prop on TextInput = messageSent function*/}
 
